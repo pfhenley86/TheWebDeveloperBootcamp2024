@@ -9,10 +9,35 @@
     <h1>Forms Demo</h1>
 
     <form action="/tacos">
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password">
-        <input type="color">
-        <input type="number" placeholder="enter a number">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <button>IN THE MIDDLE!</button>
+        <p>
+            <label for="color">Enter a Color:</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <!-- Alternative way to label an input (less common)-->
+            <label for="number">
+                Enter a Number:
+                <input id="number" type="number" placeholder="enter a number" name="number">
+            </label>
+        </p>
+        <!-- this button doesn't submit the form b/c of the "type" attribute-->
+        <button type="button">Regular button (won't submit)</button>
+        <!-- This button submits the form! -->
+         <button>Submit!!!</button>
+         <!-- So does this one: -->
+        <input type="submit" value="Click Me!">
     </form>
+    <hr>
+    <!-- Outside of a form, no default behavior -->
+    <button>Not Inside Form</button>
 </body>
 </html>
